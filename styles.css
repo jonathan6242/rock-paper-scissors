@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+}
+
+.container {
+  width: 100%;
+  max-width: 768px;
+  padding: 0 24px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 96px 0;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+/* Scoreboard */
+
+.scoreboard {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.scores {
+  display: flex;
+  margin: 64px 0;
+}
+
+.score {
+  flex: 1;
+}
+
+.score__count {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.score__label {
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.score__choice {
+  font-size: 64px;
+  line-height: 1.5;
+}
+
+.rounds {
+  background-color: #3b82f6;
+  color: #fff;
+  align-self: center;
+  padding: 8px 32px;
+  border-radius: 999px;
+  font-weight: 500;
+}
+
+/* Message */
+
+.message {
+  font-size: 24px;
+  line-height: 1.5;
+  text-align: center;
+  font-weight: 500;
+}
+
+/* Choices */
+
+.choices {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  padding: 24px 0;
+  margin-top: 64px;
+}
+
+.choice__container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.choice {
+  font-size: 64px;
+  transition: all 300ms ease;
+}
+
+.choice:disabled {
+  opacity: 0.8;
+  cursor: default;
+}
+
+.choice:hover {
+  transform: scale(1.1);
+}
+
+.choice:disabled:hover {
+  transform: scale(1);
+}
+
+/* Restart */
+
+.restart {
+  background-color: #3b82f6;
+  color: #fff;
+  font-size: 16px;
+  padding: 12px 24px;
+  align-self: center;
+  font-weight: 500;
+  margin-top: 24px;
+  border-radius: 8px;
+  display: none;
+}
+
+.restart.visible {
+  display: block;
+}
