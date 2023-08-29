@@ -6,6 +6,7 @@ const currentRoundRef = document.getElementById('currentRound')
 const message = document.getElementById('message');
 const buttons = document.querySelectorAll('.choice');
 const restart = document.getElementById('restart');
+const mode = document.getElementById('mode');
 
 let playerScore = 0;
 let computerScore = 0;
@@ -102,4 +103,8 @@ function stringToEmoji(string) {
 
 function capitalize(string) {
   return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
+}
+
+function toggleMode() {
+  document.body.classList.toggle('dark-mode');
 }

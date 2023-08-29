@@ -10,6 +10,7 @@
 body {
   min-height: 100vh;
   display: flex;
+  position: relative;
 }
 
 .container {
@@ -131,4 +132,54 @@ button {
 
 .restart.visible {
   display: block;
+}
+
+/* Dark and light mode */
+
+.mode {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 24px;
+  right: 32px;
+  border-radius: 8px;
+}
+
+.mode:hover {
+  background-color: #f3f4f6;
+}
+
+.light, .dark {
+  width: 32px;
+  height: 32px;
+  fill: #fff;
+}
+
+.dark {
+  transform: scale(0.8);
+  display: none;
+}
+
+.dark-mode {
+  background-color: #111827;
+  color: #fff;
+}
+
+.dark-mode .light {
+  display: none;
+}
+
+.dark-mode .dark {
+  display: block;
+}
+
+.dark-mode .mode:hover {
+  background-color: #1f2937;
+}
+
+* {
+  color: red;
 }
