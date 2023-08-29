@@ -60,6 +60,7 @@ button {
 .score__choice {
   font-size: 64px;
   line-height: 1.5;
+  user-select: none;
 }
 
 .rounds {
@@ -69,6 +70,7 @@ button {
   padding: 8px 32px;
   border-radius: 999px;
   font-weight: 500;
+  user-select: none;
 }
 
 /* Message */
@@ -101,6 +103,7 @@ button {
 .choice {
   font-size: 64px;
   transition: all 300ms ease;
+  user-select: none;
 }
 
 .choice:disabled {
