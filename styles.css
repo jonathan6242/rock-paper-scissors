@@ -20,7 +20,7 @@ body {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  padding: 96px 0;
+  padding: 96px 16px;
 }
 
 button {
@@ -180,6 +180,24 @@ button {
   background-color: #1f2937;
 }
 
-* {
-  color: red;
+@media(max-width: 768px) {
+  #mode {
+    top: 12px;
+    right: 16px;
+  }
+  .container {
+    padding: 64px 16px;
+  }
+  .rounds {
+    font-size: 14px;
+  }
+  .score__choice, .choice {
+    font-size: 56px;
+  }
+  .scores {
+    margin: 48px 0;
+  }
+  .message {
+    font-size: 18px;
+  }
 }
