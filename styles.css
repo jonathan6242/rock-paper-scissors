@@ -101,7 +101,7 @@ button {
   width: 128px;
   line-height: 128px;
   font-size: 64px;
-  transition: all 300ms ease;
+  transition: background-color 300ms ease;
   user-select: none;
   border: 1px solid #e5e7eb;
 }
@@ -113,10 +113,6 @@ button {
 .choice:disabled {
   opacity: 0.8;
   cursor: default;
-}
-
-.choice:disabled:hover {
-  background-color: #fff;
 }
 
 /* Restart */
@@ -188,6 +184,10 @@ button {
 .dark-mode .choice:hover,
 .dark-mode .mode:hover {
   background-color: #1f2937;
+}
+
+.choice:disabled:hover {
+  background-color: transparent;
 }
 
 @media(max-width: 768px) {
