@@ -149,6 +149,7 @@ button {
   top: 24px;
   right: 32px;
   border-radius: 8px;
+  border: 1px solid #e5e7eb;
 }
 
 .mode:hover {
@@ -179,6 +180,12 @@ button {
   display: block;
 }
 
+.dark-mode .mode,
+.dark-mode .choice {
+  border-color: #374151;
+}
+
+.dark-mode .choice:hover,
 .dark-mode .mode:hover {
   background-color: #1f2937;
 }
